@@ -50,6 +50,14 @@
 /* ============================================================
    BASE STYLES
    ============================================================ */
+html,
+body {
+  /* Guard against any minor horizontal overflow (e.g. animated/scaled
+     elements) shifting the whole layout sideways on mobile. */
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);

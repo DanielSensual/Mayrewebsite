@@ -51,7 +51,7 @@ const imageReveal = {
 
 export function SellerCta() {
   return (
-    <section aria-labelledby="seller-cta-heading">
+    <section aria-labelledby="seller-cta-heading" className="overflow-hidden">
       <motion.div
         className="flex flex-col lg:flex-row"
         variants={sectionVariants}
